@@ -98,14 +98,14 @@ network:
   ethernets:
     enp0s3:
       dhcp4: false
-      addresses: [192.168.0.XXX/24]
-      gateway4: 192.168.0.1
+      addresses: [10.26.44.221/24]
+      gateway4: 10.26.44.1
       #routes:
       #  - to: default
       #    via: 192.168.0.1
       nameservers:
         addresses: [8.8.8.8, 8.8.4.4]
-        search: [pti.intra]
+        search: [luis.intra]
   version: 2
 
 #salvar e sair do arquivo
@@ -126,8 +126,8 @@ sudo vim /etc/hosts
 		
 		#adicionar o endereço IPv4 e nome FQDN do seu servidor na linha 3
 		127.0.0.1     localhost
-		127.0.1.1     wsvaamonde.pti.intra     wsvaamonde
-		192.168.0.XXX  wsvaamonde.pti.intra    wsvaamonde
+		127.0.1.1     wsluis.luis.intra     wsluis
+		10.26.44.221  wsluis.luis.intra    wsluis
 	
 	#salvar e sair do arquivo
 	ESC SHIFT : x <Enter>
